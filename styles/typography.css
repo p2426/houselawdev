@@ -1,0 +1,41 @@
+h1 {
+    color: var(--font-colour);
+    font-size: 72px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 88px;
+}
+h2 {
+    color: var(--font-colour);
+    font-size: 56px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 64px;
+}
+h3 {
+    color: var(--font-colour);
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 48px;
+}
+h4 {
+    color: var(--font-colour);
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+}
+.heading {
+    color: var(--font-colour);
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    color: var(--font-colour);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+}
