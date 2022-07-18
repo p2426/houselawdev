@@ -18,6 +18,9 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+html {
+    font-family: 'Avenir', sans-serif;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -41,7 +44,17 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+button {
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+}
 
 html {
-    --font-colour: rgba(74,73,72,1);
+    --dark-font: #4A4948;
+    --font: #636D6D;
+    --dark-primary: #2B2961;
+    --primary: #383197;
+    --light-secondary: #7C6992;
 }

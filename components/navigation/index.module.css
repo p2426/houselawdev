@@ -1,0 +1,54 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+}
+.titlePre {
+    color: var(--dark-primary);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 6px;
+    margin-bottom: 4px;
+}
+.titlePost {
+    color: var(--light-secondary);
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+.action {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--font-colour);
+    padding: 0 15px;
+}
+.actionKick {
+    margin-right: 6px;
+}
+.actionSplitLeft {
+    padding-left: 35px;
+}
+.actionSplitRight {
+    padding-right: 35px;
+}
+.menu {
+    cursor: pointer;
+    padding-right: 40px;
+}
+.search {
+    cursor: pointer;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
