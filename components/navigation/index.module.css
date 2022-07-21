@@ -3,11 +3,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    opacity: 0; /* will transition on mount with .navigationOpaque */
+    transition: opacity 0.5s;
+}
+.navigationOpaque {
+    opacity: 1;
 }
 
 .titleContainer {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 .titlePre {
     color: var(--dark-primary);
@@ -49,6 +55,32 @@
 .search {
     cursor: pointer;
     padding: 12px;
+    margin-right: 10px;
     border: 2px solid black;
     border-radius: 50%;
+}
+.menuSearchContainer {
+    display: flex;
+}
+.menuSearchVerticalBar {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 223px;
+    height: 0px; /* will transition on mount with .menuSearchContainerBarFull */
+    background-color: var(--primary);
+    transition: height 0.5s;
+    transition-delay: 0.4s;
+}
+.menuSearchVerticalBarFull {
+    height: 786px;
+}
+
+/* util for homepage variant */
+.white {
+    color: white;
+}
+.white .search {
+    border: 2px solid white;
 }

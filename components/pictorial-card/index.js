@@ -6,7 +6,7 @@ const VOLUME_OFF = "volume_off";
 
 const PictorialCard = ({ align }) => {
 
-    const [volumeState, setVolumeState] = useState(VOLUME_UP);
+    const [volumeState, setVolumeState] = useState(VOLUME_OFF);
     const volumeRef = useRef();
 
     const handleVolumeClick = (e) => {
