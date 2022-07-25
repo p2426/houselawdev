@@ -4,6 +4,12 @@
     width: 220px;
     margin: 15px;
     box-shadow: 0px 0px 15px 0px rgb(205 205 205);
+
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+.pictorialCardShow {
+    opacity: 1;
 }
 
 .textualContainer {

@@ -12,8 +12,8 @@ const Navigation = () => {
     const homeMenuSearchWhite = isHome ? styles.white : "";
 
     useEffect(() => {
+        navigationRef.current.classList.add(styles.navigationOpaque);
         if (isHome) {
-            navigationRef.current.classList.add(styles.navigationOpaque);
             menuSearchVerticalBarRef.current?.classList.add(styles.menuSearchVerticalBarFull);
         }
     }, [isHome]);

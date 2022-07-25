@@ -1,0 +1,47 @@
+.explore {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    width: 120px;
+    height: 140px;
+    margin-top: 280px;
+    padding: 23px 15px 19px 23px;
+    border: 1px solid var(--primary);
+    border-radius: 2px;
+    background-color: var(--primary);
+
+    transition: margin-top 0.5s;
+}
+.exploreOpen {
+    margin-top: 140px;
+}
+.explore span {
+    z-index: 1;
+    color: white;
+}
+.exploreArrow {
+    z-index: 1;
+    margin-top: 28px;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: auto;
+}
+.explore:hover .exploreHoverBackground {
+    margin-top: 0;
+}
+.exploreHoverBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 140px;
+    background-color: var(--dark-font);
+    border: 1px solid var(--dark-font);
+
+    transition: margin-top 0.3s;
+}

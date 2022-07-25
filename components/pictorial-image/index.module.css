@@ -1,0 +1,11 @@
+.pictorialImage {
+    height: fit-content;
+    margin: 15px;
+    box-shadow: 0px 0px 8px 0px rgb(42 42 42);
+
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+.pictorialImageShow {
+    opacity: 1;
+}
