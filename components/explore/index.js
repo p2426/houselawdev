@@ -7,14 +7,18 @@ const Explore = ({ transitionDelay }) => {
 
     useEffect(() => {
         containerRef.current.classList.add(styles.exploreOpen);
-    }, [])
+    }, []);
+
+    const handleClick = () => {
+        document.body.dispatchEvent(new CustomEvent("ExploreOverlayOpen"));
+    }
 
     return (
-        <div ref={containerRef} className={styles.explore} style={{ transitionDelay: transitionDelay }}>
+        <button ref={containerRef} className={styles.explore} style={{ transitionDelay: transitionDelay }} type="button" onClick={handleClick}>
             <span>Explore</span>
             <span className={`${styles.exploreArrow} material-symbols-outlined`}>arrow_forward</span>
             <div className={styles.exploreHoverBackground}></div>
-        </div>
+        </button>
     );
 };
 

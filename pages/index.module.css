@@ -42,5 +42,5 @@
 }
 .rightFlex {
     display: flex;
-    align-items: center;
+    margin-top: 16%;
 }

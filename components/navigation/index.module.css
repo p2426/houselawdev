@@ -70,11 +70,49 @@
     width: 223px;
     height: 0px; /* will transition on mount with .menuSearchContainerBarFull */
     background-color: var(--primary);
+
     transition: height 0.5s;
     transition-delay: 0.4s;
 }
 .menuSearchVerticalBarFull {
     height: 786px;
+}
+.menuSearchVerticalBarText {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 99px;
+    right: 41px;
+    font-size: 12px;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+    transition-delay: 1s;
+}
+.menuSearchVerticalBarTextOpaque {
+    opacity: 1;
+}
+.menuSearchVerticalBarArrow {
+    position: absolute;
+    bottom: 21px;
+    right: 40px;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+    transition-delay: 1s;
+}
+.menuSearchVerticalBarArrow g {
+    stroke-dasharray: 167;
+    stroke-dashoffset: 167;
+    animation: ArrowDraw 3s linear infinite;
+}
+.menuSearchVerticalBarArrowOpaque {
+    opacity: 1;
+}
+
+@keyframes ArrowDraw {
+    0% { stroke-dashoffset: 167; }
+    30% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 0; }
 }
 
 /* util for homepage variant */
