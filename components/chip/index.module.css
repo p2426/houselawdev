@@ -1,0 +1,17 @@
+.chip {
+    font-family: 'Avenir';
+    background: none;
+    padding: 4px 9px;
+    margin: 0 10px;
+    border: 1px solid var(--background);
+    border-radius: 2px;
+    color: var(--primary);
+    background-color: var(--background);
+}
+.chipMuted {
+    pointer-events: none;
+    color: var(--dark-font);
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}

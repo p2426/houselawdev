@@ -1,0 +1,61 @@
+.card {
+    display: flex;
+    position: relative;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px 0px rgb(205 205 205);
+
+    outline: 0;
+    border: 0;
+    padding: 0;
+    text-align: unset;
+    align-items: inherit;
+}
+.card img {
+    transition: transform 0.5s;
+}
+.card:hover img {
+    transform: scale(1.15);
+}
+.imageContainer {
+    overflow: hidden;
+    width: 371px;
+    height: 350px;
+
+    border-right: 12px solid;
+    border-color: var(--primary);
+    margin-right: 6px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px;
+}
+.name {
+    color: var(--font);
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 12px;
+}
+.job {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 12px;
+}
+.location {
+    color: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+.description {
+    color: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 18px;
+}

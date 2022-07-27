@@ -15,7 +15,8 @@
 .textualContainer {
     display: flex;
     flex-direction: column;
-    margin: 14px 10px 20px 20px;
+    background-color: white;
+    padding: 14px 10px 20px 20px;
 }
 .descriptionContainer {
     display: flex;

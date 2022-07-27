@@ -57,4 +57,18 @@ html {
     --dark-primary: #2B2961;
     --primary: #383197;
     --light-secondary: #7C6992;
+    --background: #F6F5Fa;
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+}
+.self-center {
+    align-self: center;
 }

@@ -1,8 +1,10 @@
 .overlay {
     z-index: 2;
-    position: absolute;
+    position: fixed;
+    max-width: 1400px;
+    margin: 0 auto;
+
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -36,6 +38,13 @@
 .title {
     color: var(--dark-font);
 }
+.highlight {
+    color: var(--primary);
+}
+.chipContainer {
+    display: flex;
+    margin: 20px 0;
+}
 .search {
     outline: none;
     width: 100%;
@@ -58,6 +67,52 @@
     line-height: 40px;
     opacity: 0.5;
 }
-.highlight {
+.arrow {
+    cursor: pointer;
+    padding: 12px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
     color: var(--primary);
+    height: fit-content;
+}
+.searchSection {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top: 2px solid var(--background);
+    opacity: 0;
+
+    transition: padding-top 0.5s, opacity 0.5s;
+}
+.halfSection {
+    width: 50%;
+}
+.halfSection:first-child {
+    margin-right: 20px;
+}
+.halfSection:last-child {
+    margin-left: 20px;
+}
+.searchSectionShow > div {
+    opacity: 1;
+    padding-top: 20px;
+}
+.heading {
+    color: var(--font);
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+}
+.subheading {
+    color: var(--font);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.viewMore {
+    cursor: pointer;
+    align-self: center;
+    color: var(--font);
 }

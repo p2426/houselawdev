@@ -1,0 +1,8 @@
+.goArrow {
+    cursor: pointer;
+    padding: 12px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    color: var(--primary);
+    height: fit-content;
+}
