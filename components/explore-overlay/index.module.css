@@ -89,10 +89,10 @@
     width: 50%;
 }
 .halfSection:first-child {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 .halfSection:last-child {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .searchSectionShow > div {
     opacity: 1;

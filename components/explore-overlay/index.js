@@ -3,6 +3,7 @@ import Chip from "../chip";
 import PeopleCard from "../people-card";
 import GoArrow from "../go-arrow";
 import styles from "./index.module.css";
+import ArticleCard from "../article-card";
 
 const searchableTerms = ["healthcare"];
 const searchSectionTransitionDelays = {
@@ -89,6 +90,10 @@ const ExploreOverlay = () => {
                             <div className="flex space-between">
                                 <h4 className={styles.heading}>Suggested Articles</h4>
                                 <span className={styles.viewMore}>View more</span>
+                            </div>
+                            <div className="flex space-between">
+                                <ArticleCard src="/5.png" subject="NEWS" date="12 MM 20XX" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                                <ArticleCard src="/6.png" subject="NEWS" date="12 MM 20XX" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
                             </div>
                         </div>
                     </div>

@@ -51,13 +51,14 @@ button {
     box-sizing: border-box;
 }
 
-html {
+:root {
     --dark-font: #4A4948;
     --font: #636D6D;
     --dark-primary: #2B2961;
     --primary: #383197;
     --light-secondary: #7C6992;
     --background: #F6F5Fa;
+    --pink: #B5179E;
 }
 .flex {
     display: flex;
